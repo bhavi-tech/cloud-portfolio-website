@@ -1,8 +1,8 @@
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
-    color: white;
+    font-family: 'Playfair Display', sans-serif;
+    background: linear-gradient(120deg, #160808, #1d0909, #180b0b);
+    color: rgb(241, 230, 230);
 }
 
 header {
@@ -11,25 +11,48 @@ header {
 }
 
 h1 {
-    font-size: 3rem;
-    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(143, 82, 82, 0.7);
 }
 
 .about, .projects {
-    padding: 40px;
+    padding: 60px;
     text-align: center;
 }
 
 .card {
-    background: rgba(255,255,255,0.1);
-    padding: 20px;
-    margin: 20px auto;
-    width: 300px;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    margin: 25px auto;
+    width: 320px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.1);
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.4);
     transition: 0.3s;
+}
+
+body { }
+
+section {
+    margin-bottom: 40px;
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    min-width: 250px;
+    flex-shrink: 0;
 }
